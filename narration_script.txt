@@ -1,0 +1,473 @@
+================================================================================
+SCRIPT DE NARRACIÓN — CAPACITACIÓN QA TELEVENTAS DESPEGAR
+Archivo de referencia para revisión y edición antes de generación de audio
+Idioma: Español (México) · Tono: Amigable, profesional, claro
+Voz: Analista QA experimentado explicando a un agente en su primera semana
+================================================================================
+
+NOTA SOBRE ERRORES CRÍTICOS:
+  EC  = Error Crítico → lleva la evaluación directamente a CERO
+  ENC = Encuadre Normal de Calidad → afecta el puntaje parcialmente según peso
+
+================================================================================
+SLIDE 000 — INTRO (slide generado, fade-in al inicio)
+================================================================================
+Bienvenido al programa de capacitación de TeleVentas de Despegar. Este video fue
+diseñado especialmente para ti, como nuevo agente de ventas, para que llegues a tu
+sesión de onboarding con contexto sólido sobre tres temas clave: el proceso de
+evaluación de QA, la política de cobro por errores CXC, y los términos del glosario
+de TeleVentas. Vamos a empezar.
+
+[DURACIÓN ESTIMADA: ~20 segundos]
+
+================================================================================
+SLIDE CH1-TITLE — TARJETA DE CAPÍTULO 1 (slide generado, 3 segundos)
+TEXTO: "Capítulo 1 — Capacitación QA: Mejora Continua"
+================================================================================
+Ahora vamos a hablar del Capítulo 1: el proceso de evaluación de calidad de
+TeleVentas. Vas a conocer cómo está estructurada la rúbrica, qué se evalúa en cada
+tipo de llamada y cuáles son las actividades del equipo de QA.
+
+[DURACIÓN ESTIMADA: ~10 segundos]
+
+================================================================================
+SLIDE 1-1 — Fuente: Capacitación_de_QA.pdf, Página 1
+CONTENIDO: Portada "Mejora Continua QA — Televentas"
+================================================================================
+El área de Mejora Continua QA de TeleVentas es responsable de evaluar la calidad
+de cada llamada o chat que atiendes. Su objetivo es garantizar que cada cliente
+reciba atención de excelencia y que el proceso de venta cumpla los estándares de
+Despegar. Como agente nuevo, entender cómo funciona esta evaluación desde el inicio
+te dará una ventaja importante.
+
+[DURACIÓN ESTIMADA: ~22 segundos]
+
+================================================================================
+SLIDE 1-2 — Fuente: Capacitación_de_QA.pdf, Página 2
+CONTENIDO: Rúbrica NO VENTA (IN / Virtual)
+NOTA: Faltas Graves y los ítems en rojo son EC — enfatizar
+================================================================================
+En las llamadas sin venta, cuando el cliente no concreta una compra, el agente
+igual es evaluado. Para llamadas IN o Virtual, la rúbrica tiene seis ejes:
+Atención y servicio, Discovery, Técnicas de venta, Estrategia comercial, Productos
+cotizados, y Faltas Graves. Presta especial atención a las Faltas Graves y a todos
+los ítems marcados en rojo: son Errores Críticos y llevan tu evaluación directamente
+a cero, sin importar qué tan bien hayas hecho el resto de la llamada.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE 1-3 — Fuente: Capacitación_de_QA.pdf, Página 3
+CONTENIDO: Rúbrica VENTA (IN / Virtual)
+NOTA: La sección Confirmación completa (Deletreo, Cargos, Productos, Facturación) son todos EC
+================================================================================
+Cuando sí se cierra una venta, los criterios cambian. Se agregan la sección de
+Confirmación, que es el momento más crítico del proceso: deletreo y re-confirmación
+de datos de pasajeros, revisión de cargos, confirmación de productos reservados y
+ofrecimiento de facturación. Todos estos ítems están marcados en rojo, es decir,
+son Errores Críticos. Si fallas en confirmar correctamente los datos del pasajero
+o los cargos, tu evaluación cae a cero. También debes documentar la gestión en el
+sistema Fénix al finalizar la llamada.
+
+[DURACIÓN ESTIMADA: ~30 segundos]
+
+================================================================================
+SLIDE 1-4 — Fuente: Capacitación_de_QA.pdf, Página 4
+CONTENIDO: Rúbrica NO VENTA (WhatsApp)
+NOTA: Tiempos de espera EC — fijos 15 min, multiskill 45 min
+================================================================================
+El canal de WhatsApp tiene su propia rúbrica. En interacciones sin venta, se
+evalúan el saludo y despedida, el manejo del chat, la tipificación correcta, los
+datos básicos del cliente y la ortografía y redacción. En WhatsApp no hay voz:
+la forma en que escribes representa la imagen de Despegar. Los tiempos de respuesta
+máximos son un elemento crítico: para agentes fijos en WhatsApp, el límite es de
+15 minutos; para agentes multiskill, 45 minutos.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 1-5 — Fuente: Capacitación_de_QA.pdf, Página 5
+CONTENIDO: Rúbrica VENTA (WhatsApp)
+NOTA: Faltas Graves, Cross selling, Facturación, Cargos, Productos reservados son EC
+================================================================================
+En ventas por WhatsApp, los criterios de Faltas Graves incluyen elementos que en
+llamadas IN no aparecen como críticos: el cross selling, los productos cotizados,
+las alternativas ofrecidas, el cierre de venta y la facturación. Todos son Errores
+Críticos. La confirmación de venta en WhatsApp se realiza enviando un PDF completo
+al cliente con los datos del servicio, y el cliente debe confirmar por escrito que
+todo es correcto antes de generar la reserva.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 1-6 — Fuente: Capacitación_de_QA.pdf, Página 7
+CONTENIDO: Actividades QA
+================================================================================
+¿Qué hace el equipo de QA en su día a día? Cuatro actividades principales. Primero,
+evaluaciones con inteligencia artificial, que monitorean un porcentaje de llamadas
+de manera automática. Segundo, auditorías de llamadas PI o legales, cuando hay
+reclamaciones de clientes. Tercero, auditorías internas operativas para verificar
+la calidad del proceso comercial. Y cuarto, revisión de pagos en destino. Como
+agente, puedes ser auditado en cualquier momento y en cualquier llamada.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 1-7 — Fuente: Capacitación_de_QA.pdf, Página 8
+CONTENIDO: Proceso de Revisión (4 pasos)
+NOTA: 48 hrs para refutar, 72 hrs para respuesta del analista
+================================================================================
+Si recibes una evaluación con la que no estás de acuerdo, existe un proceso formal
+de revisión en cuatro pasos. Uno: tienes 48 horas desde que recibes la evaluación
+para enviar tu refute, es decir, tu inconformidad. Dos: tu supervisor escucha la
+llamada. Tres: el analista de QA recibe el refute y tiene hasta 72 horas para
+revisarlo. Cuatro: el analista te responde por correo confirmando si el refute fue
+aceptado o rechazado. Ese plazo de 48 horas para tú refutar no se extiende.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE CH2-TITLE — TARJETA DE CAPÍTULO 2 (slide generado, 3 segundos)
+TEXTO: "Capítulo 2 — Política CXC: Cobro por Errores en Ventas"
+================================================================================
+Ahora vamos al Capítulo 2: la Política CXC. Este tema es importante conocerlo no
+para intimidarse, sino para entender las consecuencias de errores graves en ventas
+y cómo funciona el proceso de manera transparente.
+
+[DURACIÓN ESTIMADA: ~12 segundos]
+
+================================================================================
+SLIDE 2-1 — Fuente: Política_de_cobro_por_errores.pdf, Página 4
+CONTENIDO: Objetivo y definición de Pérdida Económica
+================================================================================
+El objetivo de la Política CXC es definir un proceso claro para aplicar descuentos
+salariales cuando un agente causa una pérdida económica comprobada. No cualquier
+error lleva a un descuento. Para que aplique, deben cumplirse tres condiciones: que
+haya negligencia, fraude o incumplimiento de políticas conocidas; que exista
+evidencia documentada como audios o registros en el CRM; y que la pérdida sea
+directa, cuantificable y atribuible al agente. Ejemplos: ventas fraudulentas,
+manipulación de sistemas o uso indebido de descuentos sin autorización.
+
+[DURACIÓN ESTIMADA: ~30 segundos]
+
+================================================================================
+SLIDE 2-2 — Fuente: Política_de_cobro_por_errores.pdf, Página 5
+CONTENIDO: Proceso General de una Pérdida
+================================================================================
+¿Cómo inicia todo? Con una reclamación del cliente. El equipo de posventa crea un
+caso en Fénix asociado a una PI, un Pedido de Información. Con esa PI, calidad
+audita toda la gestión, desde el primer contacto hasta el cierre. Si el error es
+atribuible al agente, se notifica formalmente al agente, al supervisor y al
+manager. Después, Revenue Management confirma el monto de la pérdida con el
+proveedor y lo reporta a mes vencido. El proceso puede extenderse varios meses.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE 2-3 — Fuente: Política_de_cobro_por_errores.pdf, Página 6
+CONTENIDO: Proceso de Descuento al Agente
+================================================================================
+Si el Comité de Incidencias confirma la responsabilidad del agente, se autoriza el
+descuento. Este se aplica conforme a la Ley Federal del Trabajo. El equipo de
+Nómina, junto con el agente, define si el monto se descuenta en una sola exhibición
+o en cuotas. El agente firma un documento de aceptación; si hay desacuerdo, puede
+iniciar un proceso de conciliación. Punto clave: si existen dos pérdidas pendientes,
+no se pueden aplicar al mismo tiempo. Primero se cierra una y luego se firma la
+carta de la siguiente.
+
+[DURACIÓN ESTIMADA: ~30 segundos]
+
+================================================================================
+SLIDE 2-4 — Fuente: Política_de_cobro_por_errores.pdf, Página 7
+CONTENIDO: Tabla de Descuentos
+NOTA: Explicar claramente los porcentajes y el tope de cobertura por Despegar
+================================================================================
+Esta es la tabla de descuentos. Con 1 a 3 meses de antigüedad, el tope máximo a
+cubrir es de 500 dólares. En tu primera PI: cero descuento. En la segunda: 30%.
+En la tercera: 50%. Con más de 3 meses de antigüedad, el tope sube a mil dólares,
+y los porcentajes son 50%, 75% y 100% para primera, segunda y tercera PI
+respectivamente. Lo que exceda esos topes lo cubre Grupo Despegar. Esta política
+aplica para México desde el 1 de julio de 2025, y para el resto de las geografías
+desde el 15 de agosto de 2025.
+
+[DURACIÓN ESTIMADA: ~30 segundos]
+
+================================================================================
+SLIDE 2-5 — Fuente: Política_de_cobro_por_errores.pdf, Página 9
+CONTENIDO: Comité de Incidencias y sus integrantes
+================================================================================
+¿Quiénes toman estas decisiones? El Comité de Incidencias está formado por: el
+Senior Telesales Manager, el B2B2C Manager, la Operations Manager de Training y
+Quality, la Telesales Operations Manager, el HRBP Specialist de Recursos Humanos,
+y el Payroll Specialist de Nómina. Este comité existe para garantizar que ninguna
+decisión se tome de manera arbitraria. Todo el proceso queda documentado y firmado
+por los involucrados.
+
+[DURACIÓN ESTIMADA: ~24 segundos]
+
+================================================================================
+SLIDE 2-6 — Fuente: Política_de_cobro_por_errores.pdf, Página 12
+CONTENIDO: Flujo completo del proceso CXC
+================================================================================
+El flujo completo es este: el cliente genera la reclamación, posventa crea la PI,
+calidad audita la venta, Revenue consolida y reporta la pérdida a Operaciones y
+Recursos Humanos. El Comité se reúne para confirmar el modelo de descuento; el
+supervisor y el HRBP firman la carta CXC con el agente; y finalmente Nómina aplica
+el descuento. Es un proceso ordenado, con múltiples revisiones antes de cualquier
+impacto económico.
+
+[DURACIÓN ESTIMADA: ~24 segundos]
+
+================================================================================
+SLIDE CH3-TITLE — TARJETA DE CAPÍTULO 3 (slide generado, 3 segundos)
+TEXTO: "Capítulo 3 — Glosario TeleVentas"
+================================================================================
+Llegamos al Capítulo 3: el Glosario de TeleVentas. Vamos a repasar los términos y
+conceptos clave que escucharás todos los días. Conocerlos desde ahora te dará una
+ventaja enorme desde tu primer día.
+
+[DURACIÓN ESTIMADA: ~12 segundos]
+
+================================================================================
+SLIDE 3-1 — GLOSARIO
+TÉRMINOS: ENC (Encuadre Normal de Calidad) · EC (Error Crítico)
+================================================================================
+Hay dos tipos de error en la evaluación de QA. ENC, Encuadre Normal de Calidad,
+son errores que afectan tu puntaje de manera parcial, según el peso que tiene ese
+ítem en la rúbrica. EC, Error Crítico, son los ítems marcados en rojo en la rúbrica.
+Si cometes un EC, tu evaluación cae a cero de inmediato, sin importar qué tan bien
+hayas hecho el resto de la llamada. Conocer cuáles ítems son EC es lo primero que
+debes tener muy claro.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 3-2 — GLOSARIO
+TÉRMINOS: Discovery · Data básica · Sondeo
+================================================================================
+Discovery es la fase de la llamada donde identificas las necesidades del cliente.
+Dentro del Discovery hay dos elementos clave. Data básica: la información mínima
+para cotizar, que incluye fechas, origen, destino, número de pasajeros y tipo de
+servicio; una vez obtenida, debes re-confirmarla con el cliente. Sondeo: va más
+allá de los datos — es indagar de manera sutil las motivaciones del viaje, las
+preferencias y el presupuesto del cliente, para poder ofrecerle lo que realmente
+necesita.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE 3-3 — GLOSARIO
+TÉRMINOS: Manejo de llamada · Tiempos de espera
+================================================================================
+El Manejo de llamada evalúa tu estructura general: el saludo, la despedida, la
+escucha activa, el lenguaje claro y el tono de voz. También incluye los tiempos de
+espera. El máximo de silencio permitido sin interactuar con el cliente es de 1
+minuto. Si necesitas consultar algo, avísale al cliente y, al regresar, agradécele
+el tiempo de espera. En WhatsApp, los límites son distintos: 15 minutos para
+agentes fijos y 45 minutos para agentes multiskill. Superar estos tiempos puede ser
+un Error Crítico.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 3-4 — GLOSARIO
+TÉRMINOS: Cross Selling · Upselling
+================================================================================
+Cross selling, o venta cruzada, es ofrecer servicios adicionales al que el cliente
+ya solicitó, para complementar su experiencia. Por ejemplo: el cliente quiere vuelo,
+y tú le ofreces traslado o seguro de asistencia. Se puede hacer de dos formas:
+ofreciendo activamente con beneficios, o incluyendo el servicio en el total de la
+cotización. Upselling es invitar al cliente a subir de categoría, por ejemplo, de
+una habitación estándar a una suite vista al mar. Ambas técnicas generan valor al
+cliente y aumentan el ticket de la reserva.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE 3-5 — GLOSARIO
+TÉRMINOS: Dream Phase · Direccionamiento
+================================================================================
+Dream Phase es la capacidad de despertar el deseo de compra explicando con claridad
+los beneficios y atributos del producto, especialmente del hotel o destino. Se evalúa
+que menciones al menos 3 características relevantes. No se trata de leer una ficha
+técnica, sino de hablar con conocimiento y entusiasmo. Direccionamiento aplica cuando
+el negocio tiene una prioridad comercial específica: circuitos, cabinas, promociones.
+Tu responsabilidad es conocer esas prioridades y dirigir al cliente hacia ellas de
+manera natural en la conversación.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 3-6 — GLOSARIO
+TÉRMINOS: Confirmación · Deletreo y re-confirmación · Speech obligatorio
+NOTA: EC — enfatizar que es el momento más crítico de la venta
+================================================================================
+La Confirmación es el momento más crítico de una llamada de venta, y es un Error
+Crítico si se omite o se hace mal. Antes de reservar, debes leer el speech
+obligatorio: "Señor o Señora, pasaremos a la parte de la confirmación del servicio
+a reservar. Le pido su completa atención para evitar cualquier error. Una vez
+aceptada su compra, queda sujeto a los términos y condiciones de la página."
+Después, confirmas uno por uno: nombres y apellidos, deletreando fonéticamente;
+fecha de nacimiento; e identificación oficial. Un error aquí lleva la evaluación
+a cero.
+
+[DURACIÓN ESTIMADA: ~32 segundos]
+
+================================================================================
+SLIDE 3-7 — GLOSARIO
+TÉRMINOS: Cargos · Productos reservados · Facturación
+NOTA: Los tres son EC en llamadas de venta
+================================================================================
+Dentro de la Confirmación también revisas tres cosas más, todas de tipo EC.
+Cargos: menciona el método de pago, los cargos adicionales como tasas, impuestos,
+resort fee o IVA; habla siempre con aproximados, no garantices tarifas exactas.
+Productos reservados: proporciona información completa del servicio, incluyendo
+fechas, detalles del destino, número de pasajeros, políticas de cancelación y
+precio. Facturación: ofrece generar factura desde el momento de la reservación
+tomando los datos correctamente.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE 3-8 — GLOSARIO
+TÉRMINOS: Faltas Graves · Temas actitudinales · Falta de respeto · Evasión del
+          servicio · Malas prácticas · Agente virtual
+NOTA: Todas son EC sin excepción
+================================================================================
+Las Faltas Graves son siempre Error Crítico, sin excepción. Temas actitudinales:
+actitud pasivo-agresiva, sarcasmo o burla disimulada. Falta de respeto: palabras
+despectivas, bostezar o comer durante la llamada. Evasión del servicio: negarse a
+ayudar o no tener disposición. Malas prácticas: cobrar un servicio extra sin
+informarle al cliente, bajar una reserva sin su autorización, o bajar reservas desde
+la plataforma online. Agente virtual: cámara encendida con entorno inadecuado, mala
+postura o no usar uniforme.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE 3-9 — GLOSARIO
+TÉRMINOS: Pérdida del llamado · Propone agendamiento
+NOTA: Ambos son EC en la mayoría de modalidades
+================================================================================
+Pérdida del llamado significa cortar la llamada de manera deliberada y sin
+justificación. Está completamente prohibido. Si por una razón técnica necesitas
+liberar la llamada, debes anunciarlo: "Por cuestión de calidad en el servicio,
+procedo a liberar la llamada." Y debes regresar el llamado al cliente.
+Propone agendamiento: cuando el cliente no está listo para comprar, ofrece un
+seguimiento por call back, proponiendo fecha y hora concretas. El seguimiento solo
+por correo no es válido.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 3-10 — GLOSARIO
+TÉRMINOS: Tipificación · Fénix · Sócrates
+================================================================================
+Al finalizar cada gestión debes tipificar, es decir, registrar en el sistema el
+motivo real de la llamada o chat de manera correcta y completa. Fénix es el CRM
+principal de Despegar donde documentas la gestión: pegas el URL de la llamada en
+casos de pago en destino, o el correo con nombres confirmados cuando hay más de
+5 pasajeros. Sócrates es el sistema complementario donde también registras la
+tipificación. El equipo de QA consulta ambos sistemas cuando audita una llamada,
+así que la documentación es parte de tu evaluación.
+
+[DURACIÓN ESTIMADA: ~28 segundos]
+
+================================================================================
+SLIDE 3-11 — GLOSARIO
+TÉRMINOS: PI (Pedido de Información) · MSI (Meses Sin Intereses) · VF (Virtual
+          Fuerza) · TLV (TeleVentas)
+================================================================================
+Cuatro abreviaturas que escucharás con mucha frecuencia. PI, Pedido de Información:
+es el ticket que se genera cuando un cliente reclama, y que dispara el proceso de
+auditoría de QA. MSI, Meses Sin Intereses: opción de pago que debes ofrecer
+activamente al cliente, mencionando los bancos disponibles y las opciones de 3, 6,
+9 o 12 meses. VF, Virtual Fuerza: es la modalidad de trabajo remoto de los agentes.
+Y TLV simplemente significa TeleVentas, que es el área donde trabajas.
+
+[DURACIÓN ESTIMADA: ~26 segundos]
+
+================================================================================
+SLIDE 3-12 — GLOSARIO
+TÉRMINOS: Manejo de objeciones y cierre · Ofrece alternativas · Propone cierre de
+          venta
+================================================================================
+Para cerrar el glosario, tres técnicas de cierre. Manejo de objeciones: cuando el
+cliente duda, investiga la verdadera razón y responde asertivamente para orientarlo
+a la decisión de compra, mínimo una vez. Ofrece alternativas: si no hay
+disponibilidad o el cliente rechaza la primera opción, busca opciones en fechas,
+destinos, tarifas o categorías. Propone cierre de venta: especialmente en WhatsApp,
+genera activamente la propuesta de cierre usando cupones o promociones disponibles.
+Estas tres acciones marcan la diferencia entre un agente promedio y uno de alto
+desempeño.
+
+[DURACIÓN ESTIMADA: ~30 segundos]
+
+================================================================================
+SLIDE OUTRO — Slide de cierre (slide generado, fade-out al final)
+================================================================================
+Y con esto concluye tu capacitación previa al onboarding. Recuerda los tres pilares
+que revisamos hoy: la rúbrica de evaluación de QA, la política de cobro por errores
+CXC, y el glosario de términos clave. Ahora llegas a tu sesión de bienvenida con
+contexto. Esa sesión es tu espacio para resolver dudas y practicar con casos reales.
+¡Mucho éxito en esta nueva etapa! Estamos muy contentos de tenerte en el equipo de
+Despegar.
+
+[DURACIÓN ESTIMADA: ~22 segundos]
+
+================================================================================
+RESUMEN DE ESTRUCTURA Y DURACIÓN ESTIMADA
+================================================================================
+
+  INTRO .............................................................. ~20 s
+  --- CAPÍTULO 1: CAPACITACIÓN QA ---
+  CH1-TITLE (tarjeta) ................................................  ~13 s (3s display + narración)
+  Slide 1-1  Portada QA ..............................................  ~22 s
+  Slide 1-2  NO VENTA (IN/Virtual) ...................................  ~28 s
+  Slide 1-3  VENTA (IN/Virtual) ......................................  ~30 s
+  Slide 1-4  NO VENTA (WhatsApp) .....................................  ~26 s
+  Slide 1-5  VENTA (WhatsApp) ........................................  ~26 s
+  Slide 1-6  Actividades QA ...........................................  ~26 s
+  Slide 1-7  Proceso de Revisión ......................................  ~28 s
+  --- CAPÍTULO 2: POLÍTICA CXC ---
+  CH2-TITLE (tarjeta) ................................................  ~15 s (3s display + narración)
+  Slide 2-1  Objetivo y Pérdida .......................................  ~30 s
+  Slide 2-2  Proceso General ..........................................  ~28 s
+  Slide 2-3  Descuento al Agente ......................................  ~30 s
+  Slide 2-4  Tabla de Descuentos ......................................  ~30 s
+  Slide 2-5  Comité de Incidencias ....................................  ~24 s
+  Slide 2-6  Flujo Completo ...........................................  ~24 s
+  --- CAPÍTULO 3: GLOSARIO ---
+  CH3-TITLE (tarjeta) ................................................  ~15 s (3s display + narración)
+  Slide 3-1  ENC vs EC ................................................  ~26 s
+  Slide 3-2  Discovery · Data básica · Sondeo .........................  ~28 s
+  Slide 3-3  Manejo de llamada · Tiempos de espera .....................  ~26 s
+  Slide 3-4  Cross Selling · Upselling ................................  ~28 s
+  Slide 3-5  Dream Phase · Direccionamiento ............................  ~26 s
+  Slide 3-6  Confirmación · Deletreo · Speech ..........................  ~32 s
+  Slide 3-7  Cargos · Productos reservados · Facturación ...............  ~28 s
+  Slide 3-8  Faltas Graves ............................................  ~28 s
+  Slide 3-9  Pérdida del llamado · Agendamiento ........................  ~26 s
+  Slide 3-10 Tipificación · Fénix · Sócrates ..........................  ~28 s
+  Slide 3-11 PI · MSI · VF · TLV ......................................  ~26 s
+  Slide 3-12 Objeciones · Alternativas · Cierre ........................  ~30 s
+  OUTRO ..............................................................  ~22 s
+  -----------------------------------------------------------------------
+  TOTAL DIAPOSITIVAS: 30 (3 tarjetas + 27 contenido)
+  TOTAL ESTIMADO (narración + 0.8s pausa/slide + transiciones 0.4s):
+    Narración pura:                              ~770 s (~12.8 min)
+    Pausas (30 slides × 0.8 s):                  ~24 s
+    Transiciones crossfade (30 × 0.4 s):         ~12 s
+    Tarjetas de capítulo (3 × 3 s display):       ~9 s
+    TOTAL ESTIMADO:                          ~815 s (~13.6 min)
+
+  NOTA PARA AJUSTAR DURACIÓN:
+    Si deseas acortar a 10–12 min, puedes:
+    a) Reducir narración de slides CXC 2-3 y 2-4 (son los más densos), o
+    b) Omitir Slide 2-2 (Agenda CXC) y Slide 1-1 (portada QA) que son
+       diapositivas de contexto, no de contenido; o
+    c) Agrupar slides 3-6 y 3-7 en uno solo (ambos son sobre Confirmación).
+
+================================================================================
+FIN DEL SCRIPT — Por favor revisa, edita y confirma antes de la Fase 2
+================================================================================
