@@ -673,7 +673,8 @@ def pdf_page_to_image(pdf_path: Path, page_index: int) -> Image.Image:
 
 async def generate_audio_edge(text: str, out_path: Path) -> bool:
     try:
-        import edge_tts
+        import ssl, aiohttp, edge_tts
+        ssl_ctx = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
         communicate = edge_tts.Communicate(text, voice=TTS_VOICE_EDGE)
         await communicate.save(str(out_path))
         return True
@@ -684,12 +685,42 @@ async def generate_audio_edge(text: str, out_path: Path) -> bool:
 
 def generate_audio_gtts(text: str, out_path: Path) -> bool:
     try:
+        import os
+        os.environ.setdefault("REQUESTS_CA_BUNDLE", "/root/.ccr/ca-bundle.crt")
         from gtts import gTTS
         tts = gTTS(text=text, lang="es", tld="com.mx", slow=False)
         tts.save(str(out_path))
         return True
     except Exception as e:
         print(f"  [gTTS] failed: {e}")
+        return False
+
+
+def generate_audio_espeak(text: str, out_path: Path) -> bool:
+    """Offline TTS via espeak-ng (es-419 = Latin American Spanish)."""
+    import subprocess, shutil
+    wav_path = out_path.with_suffix(".wav")
+    cmd_espeak = [
+        "espeak-ng",
+        "-v", "es-419",   # Latin American Spanish
+        "-s", "145",      # speed (words/min); 145 = natural pace
+        "-p", "48",       # pitch (0–99)
+        "-a", "180",      # amplitude
+        "-w", str(wav_path),
+        text,
+    ]
+    cmd_ffmpeg = [
+        "ffmpeg", "-y", "-i", str(wav_path),
+        "-codec:a", "libmp3lame", "-qscale:a", "3",
+        str(out_path),
+    ]
+    try:
+        subprocess.run(cmd_espeak, check=True, capture_output=True)
+        subprocess.run(cmd_ffmpeg, check=True, capture_output=True)
+        wav_path.unlink(missing_ok=True)
+        return True
+    except Exception as e:
+        print(f"  [espeak-ng] failed: {e}")
         return False
 
 
@@ -702,7 +733,9 @@ async def generate_audio(text: str, out_path: Path):
     if not ok:
         ok = generate_audio_gtts(text, out_path)
     if not ok:
-        raise RuntimeError(f"TTS failed for slide — both edge-tts and gTTS failed.")
+        ok = generate_audio_espeak(text, out_path)
+    if not ok:
+        raise RuntimeError("TTS failed — edge-tts, gTTS and espeak-ng all failed.")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -710,7 +743,7 @@ async def generate_audio(text: str, out_path: Path):
 # ──────────────────────────────────────────────────────────────────────────────
 
 def get_audio_duration(audio_path: Path) -> float:
-    from moviepy.editor import AudioFileClip
+    from moviepy import AudioFileClip
     clip = AudioFileClip(str(audio_path))
     dur = clip.duration
     clip.close()
@@ -719,8 +752,7 @@ def get_audio_duration(audio_path: Path) -> float:
 
 def build_video_clip(image: Image.Image, audio_path: Path, is_chapter_card: bool = False):
     """Return a moviepy VideoClip for a single slide."""
-    from moviepy.editor import ImageClip, AudioFileClip, CompositeVideoClip
-    from moviepy.editor import ColorClip
+    from moviepy import ImageClip, AudioFileClip
 
     img_array = np.array(image.resize((WIDTH, HEIGHT), Image.LANCZOS))
     audio = AudioFileClip(str(audio_path))
@@ -732,27 +764,24 @@ def build_video_clip(image: Image.Image, audio_path: Path, is_chapter_card: bool
         display_dur = narration_dur + SLIDE_PAUSE
 
     video = ImageClip(img_array, duration=display_dur)
-    video = video.set_audio(audio)
+    video = video.with_audio(audio)
     return video
 
 
 def assemble_video(clips: list, output_path: Path):
     """Concatenate clips with crossfade transitions and save as MP4."""
-    from moviepy.editor import concatenate_videoclips
+    from moviepy import concatenate_videoclips
 
     print(f"\n[video] Assembling {len(clips)} clips ...")
-    # Apply crossfade
     faded = []
     for i, clip in enumerate(clips):
         if i == 0:
-            # Fade in at start
-            clip = clip.fadein(0.8)
+            clip = clip.with_effects([__import__("moviepy.video.fx", fromlist=["FadeIn"]).FadeIn(0.8)])
         if i == len(clips) - 1:
-            # Fade out at end
-            clip = clip.fadeout(0.8)
+            clip = clip.with_effects([__import__("moviepy.video.fx", fromlist=["FadeOut"]).FadeOut(0.8)])
         faded.append(clip)
 
-    final = concatenate_videoclips(faded, method="compose", padding=-CROSSFADE_DURATION)
+    final = concatenate_videoclips(faded, padding=-CROSSFADE_DURATION)
     print(f"[video] Writing {output_path} ...")
     final.write_videofile(
         str(output_path),
